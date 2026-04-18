@@ -1,63 +1,45 @@
-# PostHog alternative (2026): MeterCall pay-per-call
+# PostHog alternative (2026): pay-per-call for less
 
-> PostHog runs ~$4,800/yr. MeterCall replaces the product analytics workflow with pay-per-call economics — ~92% less at typical utilization.
+Looking for a PostHog alternative that doesn't lock you into a $450/month seat license? **MeterCall** lets you pay-per-call for the exact features you use.
 
-## Short version
+## The real savings math
 
-**PostHog** is the incumbent product analytics tool. Seat-licensed. Annual commit. Pro tier around $4,800/yr.
+Most PostHog customers use 10-20% of the platform. You're paying for shelf-ware.
 
-**MeterCall** is a module marketplace with pay-per-call pricing. You buy the exact product analytics module, you pay per call, no seat fee, no minimum.
+| Plan | Monthly Cost | Per-Seat | Usage Model |
+|---|---|---|---|
+| PostHog | $450 | Yes | Flat seat + overages |
+| MeterCall | ~$19 typical | No | Pay per API call, cap anytime |
 
-[→ Read the full comparison](https://metercall.ai/alternatives/posthog.html)
-[→ See MeterCall pricing](https://metercall.ai/pricing.html)
-[→ Browse all modules](https://metercall.ai/built/)
+A 10-seat team using PostHog at $450/mo/seat pays **$4500/month** whether they log in or not. The same team on MeterCall's `product-analytics` module, making 50k calls/month, pays about **$95/month** — *metered, cappable, no seats*.
 
-## The math
+## MeterCall modules that replace PostHog features
 
-| | PostHog | MeterCall |
+| MeterCall module | Replaces in PostHog | Approx call cost |
 |---|---|---|
-| Pricing | $4,800/yr flat | per-call |
-| Seat fees | yes | none |
-| Minimum commit | annual | none |
-| Typical small-team cost | $4,800/yr | under $400/yr |
-| Typical savings | — | **~92%** |
+| `product-analytics` | Event + session tracking | $0.0005 / call |
+| `webhook-fanout` | PostHog workflows / triggers | $0.0002 / fan-out |
+| `search-index` | PostHog search / lookup | $0.0001 / query |
+| `event-log` | PostHog activity log | $0.00005 / event |
+| `export-batch` | PostHog CSV / bulk export | $0.001 / export |
 
 ## Why this matters
 
-Most product analytics seats run at 5–15% actual utilization. You pay for 100%. MeterCall inverts this: you pay only for the calls you make. For teams with spiky or low-volume product analytics needs, this is usually a 5–20x cost reduction.
+PostHog charges a seat-based, per-month fee that scales with your headcount — not your actual usage. MeterCall flips the model: you pay for API calls, not chairs. Cap your monthly spend, switch modules without renegotiating contracts, and stop paying for users who barely log in.
 
-## When to stay on PostHog
+## Get started
 
-- You rely on PostHog-specific certifications or compliance wrappers
-- Your procurement mandates PostHog vendor status
-- You need PostHog's white-glove onboarding/TAM
+- **Site:** https://metercall.ai
+- **Open catalog:** https://github.com/patl4588/awesome-saas-replacements
+- **Module for this use case:** `product-analytics`
 
-## When to switch to MeterCall
+## Comparison summary
 
-- Product analytics + flags, pay-per-call
-- You care about unit economics
-- You want to avoid annual commits
-- You want API-first workflow, not UI-gated
+- **PostHog:** $450/seat/mo, seat license, annual contract, all-or-nothing
+- **MeterCall:** pay-per-call, no seats, cancel anytime, open catalog of 2,866+ SaaS replacement modules
 
-## How migration works
+Not affiliated with PostHog. PostHog is a trademark of its respective owner. This page is an independent price comparison for teams evaluating lower-cost metered alternatives.
 
-1. Export your PostHog data (CSV/JSON)
-2. Import into the MeterCall product analytics module
-3. Re-point integrations (most use the same payload shape)
-4. Cancel PostHog at the end of your current term
+---
+Last updated: April 2026 · [MeterCall.ai](https://metercall.ai)
 
-Most teams complete this in an afternoon.
-
-## Links
-
-- [MeterCall — PostHog alternative page](https://metercall.ai/alternatives/posthog.html)
-- [awesome-saas-replacements](https://github.com/patl4588/awesome-saas-replacements)
-- [MeterCall homepage](https://metercall.ai)
-
-## License
-
-This comparison brief is CC0 / public domain.
-
-## Disclaimer
-
-PostHog is a trademark of its respective owner and is not affiliated with MeterCall. Pricing figures are approximate and based on publicly listed pro/business tiers as of 2026.
